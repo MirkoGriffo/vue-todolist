@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  background-color: cornflowerblue;
+}
+
+/* Layout */
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* New ToDo */
+
+.new-todo {
+  display: flex;
+  margin-top: 50px;
+}
+
+.new-todo input {
+  flex-grow: 1;
+  margin-right: 20px;
+  border: 0;
+  border-bottom: 1px solid black;
+  background-color: cornflowerblue;
+}
+
+.new-todo input,
+.new-todo button {
+  height: 35px;
+
+  outline: none;
+}
+
+.new-todo input:hover,
+.new-todo input:focus {
+  border-color: black;
+}
+
+.new-todo input::placeholder {
+  color: white;
+}
+
+.new-todo button {
+  padding: 0 30px;
+  text-transform: uppercase;
+  background-color: chartreuse;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 0;
+}
+
+.new-todo button:hover,
+.new-todo button:focus {
+  background: #ccc;
+}
+
+/* ToDo list */
+
+.todos-container {
+  margin: 40px 0;
+  padding: 15px 30px;
+  background: #f2f2f2;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo:last-child {
+  border: none;
+}
+
+.todo .text.completed {
+  text-decoration: line-through;
+}
